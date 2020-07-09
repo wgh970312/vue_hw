@@ -17,6 +17,7 @@ export default {
     this.$on("msg2", msg => {
       this.msg = msg;
     });
+    console.log(this.$children);
   },
   methods: {
     click() {

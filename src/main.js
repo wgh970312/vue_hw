@@ -5,6 +5,10 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+import Notice from "@/components/h-ui/HNotice/notice";
+
+Vue.prototype.$Notice = Notice;
+
 Vue.prototype.$dispatch = function(eventName, data) {
   let parent = this.$parent;
   while (parent) {

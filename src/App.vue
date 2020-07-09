@@ -4,7 +4,9 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/communicate">通信</router-link> |
-      <router-link to="/custom-component">自定义校验组件</router-link>
+      <router-link to="/custom-component">自定义校验组件</router-link> |
+      <router-link to="/notice">自定义弹出框组件</router-link> ｜
+      <router-link to="/tree">Tree</router-link>
     </div>
     <router-view />
   </div>

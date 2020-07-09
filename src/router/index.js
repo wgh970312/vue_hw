@@ -56,6 +56,16 @@ const routes = [
     path: "/custom-component",
     name: "CustomComponenr",
     component: () => import("@/views/CustomComponent.vue")
+  },
+  {
+    path: "/notice",
+    name: "Notice",
+    component: () => import("@/views/Notice.vue")
+  },
+  {
+    path: "/tree",
+    name: "Tree",
+    component: () => import("@/views/Tree.vue")
   }
 ];
 

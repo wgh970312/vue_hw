@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h-form :model="model" :rules="rules" ref="form">
+    <!-- <h-form :model="model" :rules="rules" ref="form">
       <h-form-item label="姓名" prop="name">
         <h-input v-model="model.name" />
       </h-form-item>
@@ -8,7 +8,9 @@
         <h-input v-model="model.age" />
       </h-form-item>
     </h-form>
-    <button @click="submit">提交</button>
+    <button @click="submit">提交</button> -->
+    <h-input v-model="name" />
+    <button @click="name = 'hello'">change</button>
   </div>
 </template>
 
@@ -31,14 +33,16 @@ export default {
       rules: {
         name: { required: true, message: "请输入姓名" },
         age: { required: true, message: "请输入年龄" }
-      }
+      },
+      name: "hi"
     };
   },
   methods: {
     submit() {
-      this.$refs.form.validate(valid => {
-        console.log("valid", valid);
-      });
+      this.model.name = "1";
+      // this.$refs.form.validate(valid => {
+      //   console.log("valid", valid);
+      // });
     }
   }
 };

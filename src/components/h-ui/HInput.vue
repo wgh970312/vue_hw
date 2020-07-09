@@ -1,5 +1,8 @@
 <template>
-  <input :value="value" @blur="onBlur" @input="onInput" />
+  <div id="jest-div">
+    <!-- {{ value }} -->
+    <input :value="value" @blur="onBlur" @input="onInput" />
+  </div>
 </template>
 
 <script>
